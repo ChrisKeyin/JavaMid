@@ -18,4 +18,12 @@ public class Prescription {
         this.issueDate = issueDate;
         this.expiryDate = issueDate.plusYears(1);
     }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public Medication getMedication() {
+        return medication;
+    }
 }
