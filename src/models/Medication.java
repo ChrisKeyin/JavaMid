@@ -24,4 +24,29 @@ public class Medication {
     public void setQuantityInStock(int quantityInStock) {
         this.quantityInStock = quantityInStock;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void reduceStock(int amount) {
+        this.quantityInStock -= amount;
+            if (this.quantityInStock < 0) {
+                this.quantityInStock = 0;
+            }
+    }
+
+    public String getDose() {
+        return dose;
+    }
+
+    public LocalDate getExpiryDate() {
+        return expiryDate;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+
 }

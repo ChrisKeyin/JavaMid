@@ -19,11 +19,27 @@ public class Prescription {
         this.expiryDate = issueDate.plusYears(1);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
     public Patient getPatient() {
         return patient;
     }
 
     public Medication getMedication() {
         return medication;
+    }
+
+    public LocalDate getIssueDate() {
+        return issueDate;
+    }
+
+    public LocalDate getPrescriptionExpiry() {
+        return expiryDate;
     }
 }

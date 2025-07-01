@@ -12,4 +12,19 @@ public class Doctor extends Person {
         this.patients = new ArrayList<>();
     }
 
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void addPatient(Patient patient) {
+        patients.add(patient);
+    }
+
+    public ArrayList<Patient> getPatients() {
+        return patients;
+    }
 }
