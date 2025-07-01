@@ -3,7 +3,16 @@ import models.*;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+/**
+ * Entry point for the Pharmacy Management System.
+ * Provides a console-based menu for managing patients, doctors, medications, and prescriptions.
+ */
 public class Main {
+    /**
+     * Main method to run the Pharmacy Management System.
+     *
+     * @param args command-line arguments
+     */
     public static void main(String[] args) {
         MedicationTrackingSystem system = new MedicationTrackingSystem();
         Scanner scanner = new Scanner(System.in);
